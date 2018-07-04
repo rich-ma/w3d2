@@ -24,9 +24,20 @@ class ModelBase
     end
   end
   
-  def where
+  def save
     
   end
+  
+  def where(options)
+    options.keys
+    data = QuestionsDatabase.instance.execute(<<-SQL,#{} )
+    
+    SQL
+    
+    data.blah
+  end
 end
+:id = > " "
+Object#instance_variables @{fdfdsf.to_s}
 
 require_relative 'user'
